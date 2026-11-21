@@ -9,5 +9,8 @@ public class Race {
             leadersName = newCar.name;
             leadersDistance = newDistance;
         }
+        else if (newDistance != 0 && newDistance == leadersDistance) {
+            leadersName += ", " + newCar.name;
+        }
     }
 }
